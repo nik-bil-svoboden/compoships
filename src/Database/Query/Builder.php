@@ -2,9 +2,9 @@
 
 namespace Awobaz\Compoships\Database\Query;
 
-use Illuminate\Database\Query\Builder as BaseQueryBuilder;
+use Brokenice\LaravelMysqlPartition\Schema\QueryBuilder;
 
-class Builder extends BaseQueryBuilder
+class Builder extends QueryBuilder
 {
     public function whereIn($column, $values, $boolean = 'and', $not = false)
     {
